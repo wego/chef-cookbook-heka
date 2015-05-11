@@ -1,0 +1,14 @@
+[input_log]
+type = "LogstreamerInput"
+log_directory = "<%=@log_directory%>"
+file_match = "<%=@file_match%>"
+
+[output_kafka]
+type = "KafkaOutput"
+message_matcher = "TRUE"
+topic = "<%=@topic%>"
+addrs = ["<%=@kafka_host%>"]
+encoder = "PayloadEncoder"
+
+[PayloadEncoder]
+append_newlines = false
