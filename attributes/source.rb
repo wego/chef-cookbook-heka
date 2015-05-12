@@ -21,8 +21,7 @@ default["heka"]["source"] = {
     "packages" => [
       ## Add libraries required for plugins such as the the sarama library
       ## for communication with kafka
-      "github.com/Shopify/sarama",
-      "github.com/mitchellh/goamz"
+      "github.com/Shopify/sarama"
     ]
   },
   "dir" => {
