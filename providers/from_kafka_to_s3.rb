@@ -6,7 +6,7 @@ action :create do
   region = new_resource.region
   ticker_interval = new_resource.ticker_interval
   topic = new_resource.topic
-  kafka_host = new_resource.kafka_host
+  kafka_hosts = new_resource.kafka_hosts
 
   toml_file_path = "/etc/heka/from_kafka_#{topic}_to_s3.toml"
 
@@ -21,7 +21,7 @@ action :create do
       :region => region,
       :ticker_interval => ticker_interval,
       :topic => topic,
-      :kafka_host => kafka_host
+      :kafka_hosts => kafka_hosts
     )
   end
 end

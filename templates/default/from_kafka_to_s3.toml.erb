@@ -1,7 +1,7 @@
 [input_kafka]
 type = "KafkaInput"
 topic = "<%=@topic%>"
-addrs = ["<%=@kafka_host%>"]
+addrs = <%=@kafka_hosts%>
 
 [output_s3]
 type = "S3Output"

@@ -7,7 +7,7 @@ file_match = "<%=@file_match%>"
 type = "KafkaOutput"
 message_matcher = "TRUE"
 topic = "<%=@topic%>"
-addrs = ["<%=@kafka_host%>"]
+addrs = <%=@kafka_hosts%>
 encoder = "PayloadEncoder"
 
 [PayloadEncoder]
