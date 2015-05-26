@@ -1,9 +1,9 @@
-[input_kafka]
+[<%=@topic%>-input-kafka]
 type = "KafkaInput"
 topic = "<%=@topic%>"
 addrs = <%=@kafka_hosts%>
 
-[output_s3]
+[<%=@topic%>-output-s3]
 type = "S3Output"
 message_matcher = "TRUE"
 secret_key = "<%=@secret_key%>"

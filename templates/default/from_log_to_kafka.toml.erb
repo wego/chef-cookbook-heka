@@ -1,9 +1,9 @@
-[input_log]
+[<%=@file_match%>-input-log]
 type = "LogstreamerInput"
 log_directory = "<%=@log_directory%>"
 file_match = "<%=@file_match%>"
 
-[output_kafka]
+[<%=@topic%>-output-kafka]
 type = "KafkaOutput"
 message_matcher = "TRUE"
 topic = "<%=@topic%>"
