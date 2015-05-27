@@ -5,7 +5,7 @@ file_match = "<%=@file_match%>"
 
 [<%=@topic%>-output-kafka]
 type = "KafkaOutput"
-message_matcher = "TRUE"
+message_matcher = "Logger == '<%=@topic%>-input-log'"
 topic = "<%=@topic%>"
 addrs = <%=@kafka_hosts%>
 encoder = "PayloadEncoder"
