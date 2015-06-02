@@ -1,0 +1,14 @@
+[<%=@topic%>-input-kafka]
+type = "KafkaInput"
+topic = "<%=@topic%>"
+addrs = <%=@kafka_hosts%>
+
+[<%=@topic%>-output-bq]
+type = "BqOutput"
+message_matcher = "Logger == '<%=@topic%>-input-kafka'"
+project_id = "<%=@project_id%>"
+dataset_id = "<%=@dataset_id%>"
+table_id = "<%=@table_id%>"
+ticker_interval = <%=@ticker_interval%>
+buffer_path = "<%=@buffer_path%>"
+buffer_file = "<%=@buffer_file%>"
