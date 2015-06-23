@@ -29,7 +29,8 @@ default["heka"]["source"] = {
       ## for communication with kafka
       "github.com/Shopify/sarama",
       ## for communication with AWS
-      "github.com/mitchellh/goamz",
+      "github.com/mitchellh/goamz/s3",
+      "github.com/mitchellh/goamz/aws",
       "github.com/vaughan0/go-ini"
     ]
   },
