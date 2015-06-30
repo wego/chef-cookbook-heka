@@ -9,7 +9,7 @@ default["heka"]["source"] = {
     # Add items here like the following that's required for integration with kafka
     "add_external_plugin(git https://github.com/genx7up/heka-kafka acf3ac7a3d6d6dab313510f81828fca2f9375229)",
     "add_external_plugin(git https://github.com/uohzxela/heka-s3 master)",
-    "add_external_plugin(git https://github.com/aranair/heka-bigquery master)"
+    "add_external_plugin(git https://github.com/wego/heka-bigquery master)"
   ],
   "git" => {
     "source" => "https://github.com/mozilla-services/heka.git",
